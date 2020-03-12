@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+:root {
+    --background: rgba(247,230,255);
+}
+body {
+    margin: 0;
+}
+#header-img {
+    max-width: 55px;
+}
+#header-img, h1 {
+    float: left;
+}
+header {
+    background: var(--background);
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+h1 {
+    font-family: 'Bellota', Arial;
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 25px;
+    margin-right: 25px;
+
+    position: relative;
+}
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover {
+    color: #7b737f;
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #7b737f;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
