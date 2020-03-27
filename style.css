@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
 :root {
     --background: rgba(247,230,255);
+    --background-bg: rgb(250, 250, 250);
 }
 body {
     margin: 0;
@@ -8,8 +9,17 @@ body {
 #header-img {
     max-width: 55px;
 }
-#header-img, h1 {
+#header-img, 
+h1 {
     float: left;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 header {
     background: var(--background);
@@ -19,11 +29,19 @@ header::after {
     display: table;
     clear: both;
 }
-h1 {
+h1, 
+h2 {
     font-family: 'Bellota', Arial;
+    font-size: 35px;
+    padding-top: .15em;
+}
+h2,
+p {
+    text-align: center;
 }
 nav {
     float: right;
+    font-family: 'Bellota', Arial;
 }
 nav ul {
     margin: 0;
@@ -33,7 +51,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 100px;
-    padding-top: 25px;
+    padding-top: 20px;
     margin-right: 25px;
 
     position: relative;
@@ -60,4 +78,53 @@ nav a::before {
 }
 nav a:hover::before {
     width: 100%;
+}
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.2rem 0 2.1rem 0;
+}
+.container-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.store-header {
+    background: var(--background-bg);
+}
+.store-buttons {
+    margin: 10px 100px 10px 100px;
+    padding-bottom: 10px 10px;
+    justify-content: space-evenly;
+}
+.container-books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#button {
+    flex-direction: column;
+}
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0 0 40px 0;
+}
+
+
+@media(max-width: 480px) {
+    .container-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 }
