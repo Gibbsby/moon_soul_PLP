@@ -1,7 +1,7 @@
 Product Landing Page
 And Portfolio
-For Freecodecamp.com
+For Freecodecamp.org
 
 -Gibbsby
 
-Working Site at https://gibbsby.github.io/moon_soul_PLP_2/#store
+Working Site at https://gibbsby.github.io/moon_soul_PLP_2/
